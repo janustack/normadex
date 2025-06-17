@@ -1,0 +1,3 @@
+## Our Pledge
+
+By contributing to this project, we pledge to diligently uphold the standards outlined in our Engineering Codex. Our commitment is twofold: to build inclusive and accessible experiences for all users, regardless of ability, and to craft clean, consistent, and maintainable code that our colleagues can confidently build upon. This pledge unites our efforts in creating software that is not only robust and scalable but also respectful to its users and its creators.

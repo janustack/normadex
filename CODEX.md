@@ -16,11 +16,6 @@ A covenant of consistent coding practices, naming conventions, and abbreviations
 - **Consistency is Key**: Adhere to the established conventions of a language, framework, or project.
 - **Context Matters**: The best naming choice often depends on the specific context of the code.
 
-
-## Our Pledge
-
-By contributing to this project, we pledge to diligently uphold the standards outlined in our Engineering Codex. Our commitment is twofold: to build inclusive and accessible experiences for all users, regardless of ability, and to craft clean, consistent, and maintainable code that our colleagues can confidently build upon. This pledge unites our efforts in creating software that is not only robust and scalable but also respectful to its users and its creators.
-
 ## Abbreviations
 
 A list of approved abbreviations to be used when a full name is overly verbose.
@@ -36,6 +31,7 @@ Some of these may not be practical or recommend for use case but are defined her
 - `val` - value
 - `mid` - middle
 - `tmp` - temporary
+- `struct` - structure
 - `bin` - binary
 - `ll` - linked list
 - `res` - result
@@ -62,6 +58,7 @@ Some of these may not be practical or recommend for use case but are defined her
 - `out` - output
 - `int` - integer
 - `exec` - execute
+- `nav` - navigate
 - `exe` - executable
 - `lang` - language
 - `eval` - evaluate
@@ -131,7 +128,9 @@ Some of these may not be practical or recommend for use case but are defined her
 - `alg` - algorithm
 - `async` - asynchronous
 - `sync` - synchronous
+- `dbl` - double
 - `inc` - increment
+- `eg` - example
 - `trav` - traverse or traversal
 
 ### Math
@@ -162,6 +161,11 @@ Some of these may not be practical or recommend for use case but are defined her
 - For top-level, important, standalone documents (e.g., `STD_COVENANT.md`, `CONTRIBUTING.md`), use SCREAMING_SNAKE_CASE.  
 - For files within organized documentation folders or URL-friendly paths (e.g., `docs/getting-started.md`, `docs/installation.md`), use kebab-case.
 
+To explicitly indicate a path refers to a **directory**, append a trailing slash (`/`).
+
+- Correct usage: `src/`, `node_modules/`, `tests/`
+- This helps distinguish folders from files in documentation and reduces ambiguity in technical writing.
+
 ### JavaScript/Typescript Package Structure
 
 In each package root directory:
@@ -189,6 +193,8 @@ In each package root directory:
 
 
 ## kebab-case
+
+CLI commands
 
 ## snake_case
 
