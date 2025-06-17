@@ -1,3 +1,9 @@
+## Guiding Principles
+
+- **Clarity over Brevity**: Prefer descriptive names over short, ambiguous ones. Abbreviations should be common and easily understood.
+- **Consistency is Key**: Adhere to the established conventions of a language, framework, or project.
+- **Context Matters**: The best naming choice often depends on the specific context of the code.
+
 ## How to Adopt STD Covenant
 
 Your codex should be easy to locate, whether as page on your community's website or a CODEX.md file in the root directory of your project's repository.

@@ -10,12 +10,6 @@ A covenant of consistent coding practices, naming conventions, and abbreviations
   - [Math](#math)
 - [Naming Conventions](#naming-conventions)
 
-## Guiding Principles
-
-- **Clarity over Brevity**: Prefer descriptive names over short, ambiguous ones. Abbreviations should be common and easily understood.
-- **Consistency is Key**: Adhere to the established conventions of a language, framework, or project.
-- **Context Matters**: The best naming choice often depends on the specific context of the code.
-
 ## Abbreviations
 
 A list of approved abbreviations to be used when a full name is overly verbose.
@@ -33,6 +27,7 @@ Some of these may not be practical or recommend for use case but are defined her
 - `tmp` - temporary
 - `struct` - structure
 - `bin` - binary
+- `loc` - lines of code
 - `ll` - linked list
 - `res` - result
 - `alloc` - allocate
@@ -45,6 +40,8 @@ Some of these may not be practical or recommend for use case but are defined her
 - `rand` - random
 - `std` - standard
 - `vec` - vector
+- `nor` - not or
+- `xor` - exclusive or
 - `lvl` - level
 - `obj` - object
 - `ref` - reference

@@ -1,3 +1,3 @@
 # STD Covenant
 
-[![STD Covenant Coding Standards](https://img.shields.io/badge/STD_COVENANT-Coding_Standards-blue?style=flat&logo=github)](./CODEX.md)
+[![STD Covenant](https://img.shields.io/badge/STD_COVENANT-Codex-green?style=flat&logo=github)](CODEX.md).
