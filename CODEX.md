@@ -1,6 +1,4 @@
-#  STD Covenant Coding Codex
-
-A covenant of consistent coding practices, naming conventions, and abbreviations for accessible and maintainable development.
+# A Codex of Coding Standards and Conventions
 
 ## Table of Contents
 

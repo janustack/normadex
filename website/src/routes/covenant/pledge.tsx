@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/solid-router";
 
-export const Route = createFileRoute("/pledge")({
+export const Route = createFileRoute("/covenant/pledge")({
 	component: Pledge,
 	head: () => ({
 		meta: [
 			{
-				title: "Pledge - STD Covenant",
+				title: "Pledge - Normadex",
 			},
 			{
 				name: "description",
@@ -19,9 +19,9 @@ function Pledge() {
 	return (
 		<>
 			<header>
-				<h1></h1>
+				<h1>Pledge to the Normadex Covenant</h1>
 				<p></p>
 			</header>
 		</>
-	);
+	)
 }

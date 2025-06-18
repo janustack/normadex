@@ -1,3 +1,3 @@
-# STD Covenant
+# Normadex
 
-[![STD Covenant](https://img.shields.io/badge/STD_COVENANT-Codex-green?style=flat&logo=github)](CODEX.md)
+[![Normadex Badge](https://img.shields.io/badge/Normadex-Codex-green?style=flat&logo=github)](https://github.com/janustack/normadex/blob/main/CODEX.md)

@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
 	head: () => ({
 		meta: [
 			{
-				title: "STD Covenant",
+				title: "Normadex",
 			},
 			{
 				name: "description",
@@ -19,7 +19,8 @@ function App() {
 	return (
 		<>
 			<header>
-				<h1>STD Covenant</h1>
+				<h1>Normadex</h1>
+				<p></p>
 			</header>
 		</>
 	);

@@ -9,89 +9,94 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as PledgeRouteImport } from './routes/pledge'
-import { Route as CodexRouteImport } from './routes/codex'
-import { Route as AdoptersRouteImport } from './routes/adopters'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CovenantIndexRouteImport } from './routes/covenant/index'
+import { Route as CovenantPledgeRouteImport } from './routes/covenant/pledge'
+import { Route as CovenantCodexRouteImport } from './routes/covenant/codex'
+import { Route as CovenantAdoptersRouteImport } from './routes/covenant/adopters'
 
-const PledgeRoute = PledgeRouteImport.update({
-  id: '/pledge',
-  path: '/pledge',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CodexRoute = CodexRouteImport.update({
-  id: '/codex',
-  path: '/codex',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdoptersRoute = AdoptersRouteImport.update({
-  id: '/adopters',
-  path: '/adopters',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CovenantIndexRoute = CovenantIndexRouteImport.update({
+  id: '/covenant/',
+  path: '/covenant/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CovenantPledgeRoute = CovenantPledgeRouteImport.update({
+  id: '/covenant/pledge',
+  path: '/covenant/pledge',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CovenantCodexRoute = CovenantCodexRouteImport.update({
+  id: '/covenant/codex',
+  path: '/covenant/codex',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CovenantAdoptersRoute = CovenantAdoptersRouteImport.update({
+  id: '/covenant/adopters',
+  path: '/covenant/adopters',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/adopters': typeof AdoptersRoute
-  '/codex': typeof CodexRoute
-  '/pledge': typeof PledgeRoute
+  '/covenant/adopters': typeof CovenantAdoptersRoute
+  '/covenant/codex': typeof CovenantCodexRoute
+  '/covenant/pledge': typeof CovenantPledgeRoute
+  '/covenant': typeof CovenantIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/adopters': typeof AdoptersRoute
-  '/codex': typeof CodexRoute
-  '/pledge': typeof PledgeRoute
+  '/covenant/adopters': typeof CovenantAdoptersRoute
+  '/covenant/codex': typeof CovenantCodexRoute
+  '/covenant/pledge': typeof CovenantPledgeRoute
+  '/covenant': typeof CovenantIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/adopters': typeof AdoptersRoute
-  '/codex': typeof CodexRoute
-  '/pledge': typeof PledgeRoute
+  '/covenant/adopters': typeof CovenantAdoptersRoute
+  '/covenant/codex': typeof CovenantCodexRoute
+  '/covenant/pledge': typeof CovenantPledgeRoute
+  '/covenant/': typeof CovenantIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/adopters' | '/codex' | '/pledge'
+  fullPaths:
+    | '/'
+    | '/covenant/adopters'
+    | '/covenant/codex'
+    | '/covenant/pledge'
+    | '/covenant'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/adopters' | '/codex' | '/pledge'
-  id: '__root__' | '/' | '/adopters' | '/codex' | '/pledge'
+  to:
+    | '/'
+    | '/covenant/adopters'
+    | '/covenant/codex'
+    | '/covenant/pledge'
+    | '/covenant'
+  id:
+    | '__root__'
+    | '/'
+    | '/covenant/adopters'
+    | '/covenant/codex'
+    | '/covenant/pledge'
+    | '/covenant/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AdoptersRoute: typeof AdoptersRoute
-  CodexRoute: typeof CodexRoute
-  PledgeRoute: typeof PledgeRoute
+  CovenantAdoptersRoute: typeof CovenantAdoptersRoute
+  CovenantCodexRoute: typeof CovenantCodexRoute
+  CovenantPledgeRoute: typeof CovenantPledgeRoute
+  CovenantIndexRoute: typeof CovenantIndexRoute
 }
 
 declare module '@tanstack/solid-router' {
   interface FileRoutesByPath {
-    '/pledge': {
-      id: '/pledge'
-      path: '/pledge'
-      fullPath: '/pledge'
-      preLoaderRoute: typeof PledgeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/codex': {
-      id: '/codex'
-      path: '/codex'
-      fullPath: '/codex'
-      preLoaderRoute: typeof CodexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/adopters': {
-      id: '/adopters'
-      path: '/adopters'
-      fullPath: '/adopters'
-      preLoaderRoute: typeof AdoptersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -99,14 +104,43 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/covenant/': {
+      id: '/covenant/'
+      path: '/covenant'
+      fullPath: '/covenant'
+      preLoaderRoute: typeof CovenantIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/covenant/pledge': {
+      id: '/covenant/pledge'
+      path: '/covenant/pledge'
+      fullPath: '/covenant/pledge'
+      preLoaderRoute: typeof CovenantPledgeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/covenant/codex': {
+      id: '/covenant/codex'
+      path: '/covenant/codex'
+      fullPath: '/covenant/codex'
+      preLoaderRoute: typeof CovenantCodexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/covenant/adopters': {
+      id: '/covenant/adopters'
+      path: '/covenant/adopters'
+      fullPath: '/covenant/adopters'
+      preLoaderRoute: typeof CovenantAdoptersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AdoptersRoute: AdoptersRoute,
-  CodexRoute: CodexRoute,
-  PledgeRoute: PledgeRoute,
+  CovenantAdoptersRoute: CovenantAdoptersRoute,
+  CovenantCodexRoute: CovenantCodexRoute,
+  CovenantPledgeRoute: CovenantPledgeRoute,
+  CovenantIndexRoute: CovenantIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

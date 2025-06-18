@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/solid-router";
 
-export const Route = createFileRoute("/adopters")({
+export const Route = createFileRoute("/covenant/adopters")({
 	component: Adopters,
 	head: () => ({
 		meta: [
 			{
-				title: "Adopters - STD Covenant",
+				title: "Adopters - Normadex",
 			},
 			{
 				name: "description",
@@ -19,9 +19,9 @@ function Adopters() {
 	return (
 		<>
 			<header>
-				<h1>Adopters</h1>
-				<p>Communities that have adopted the STD Covenant.</p>
+				<h1>Adopters of the Normadex Covenant</h1>
+				<p>Communities that have adopted the Normadex Covenant.</p>
 			</header>
 		</>
-	);
+	)
 }
