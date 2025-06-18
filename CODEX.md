@@ -5,7 +5,10 @@
 - [Abbreviations](#abbreviation)
   - [General](#general)
   - [Math](#math)
-  - [Time](#time)
+  - [Units of Measurement](#units-of-measurement)
+    - [Data Size](#data-size)
+    - [Data Speed](#data-speed)
+    - [Time](#time)
 - [Conventions](#conventions)
 
 ## Abbreviations
@@ -19,12 +22,12 @@ Some of these may not be practical or recommend for use case but are defined her
 - `arr` - array
 - `idx` - index
 - `rec` - recursion
+- `reg` - register
 - `iter` - iteration
 - `val` - value
 - `mid` - middle
 - `tmp` - temporary
 - `struct` - structure
-- `bin` - binary
 - `loc` - lines of code
 - `ll` - linked list
 - `res` - result
@@ -41,16 +44,11 @@ Some of these may not be practical or recommend for use case but are defined her
 - `nor` - not or
 - `xor` - exclusive or
 - `lvl` - level
+- `esc` - escape
 - `obj` - object
-- `ref` - reference
 - `cfg` - config
 - `desc` - description
 - `config` - configuration
-- `io` - I/O (Input/Output)
-- `hi` - high
-- `lo` - low
-- `in` - input
-- `out` - output
 - `int` - integer
 - `exec` - execute
 - `nav` - navigate
@@ -71,8 +69,6 @@ Some of these may not be practical or recommend for use case but are defined her
 - `env` - environment
 - `fmt` - format
 - `buf` - buffer
-- `undef` - undefined
-- `def` - define or definition
 - `proto` - prototype or protocol
 - `gen` - generate
 - `curr` - current
@@ -84,6 +80,7 @@ Some of these may not be practical or recommend for use case but are defined her
 - `dev` - development
 - `dest` - destination
 - `str` - string
+- `tt` - truth table
 - `fib` - Fibonacci
 - `mem` - memory
 - `seg` - segmentation
@@ -91,46 +88,86 @@ Some of these may not be practical or recommend for use case but are defined her
 - `seq` - sequence
 - `cpy` - copy
 - `doc` / `docs` - document(s)
+- `fact` - factorial
 - `ptr` - pointer
 - `addr` - address
-- `cd` - change directory
 - `del` - delete
 - `proc` - process
-- `dir` - directory
 - `exec` - execute
 - `exe` - executable
 - `elem` / `elems` - element(s)
-- `ls` - list
-- `pwd` - print working directory
 - `lit` - literal
 - `rm` - remove
-- `os` - operating system
 - `app` / `apps` - application(s)
-- `deref` - dereference
 - `rev` - reverse
-- `win` - Windows
-- `sys` - system
 - `ign` - ignore
 - `lib` - library
 - `pkg` - package
 - `interop` - interoperability
 - `repo` - repository
+- `rep` - repeat or representation
 - `opt` - optional or option
 - `param` / `params` - parameter(s)
 - `cnt` - count
+- `alg` - algorithm
+- `dbl` - double
+- `eg` - example
+- `def` - definition
+- `trav` - traverse or traversal
+- `props` - properties
+- `op` - operation
+- `dup` - duplicate
+
+- `ref` - reference
+- `deref` - dereference
+
+- `def` - defined
+- `undef` - undefined
+
+- `prt` - print
+- `dis` - display
+
+- `enc` - encode
+- `dec` - decoding
+
+- `inc` - increment
+- `dec` - decrement
+
+- `sync` - synchronous
+- `async` - asynchronous
+
 - `arg` / `args` - argument(s)
 - `argc`or `argcnt` - argument count
 - `argv` or `argvec` - argument vector
-- `alg` - algorithm
-- `async` - asynchronous
-- `sync` - synchronous
-- `dbl` - double
-- `inc` - increment
-- `eg` - example
-- `trav` - traverse or traversal
+
+- `io` - Input/Output (I/O)
+- `in` - input
+- `out` - output
+
+- `hi` - high
+- `lo` - low
+
+### Number Systems
+
+- `bin` - binary
+- `dec` - decimal
+- `hex` - hexadecimal
+- `oct` octal
+
+### System
+
+- `cd` - change directory
+- `dir` - directory
+- `ls` - list
+- `os` - operating system
+- `pwd` - print working directory
+- `rm` - remove
+- `sys` - system
+- `win` - Windows
 
 ### Math
 
+- `abs` - absolute
 - `add` - addition
 - `avg` - average
 - `diff` - difference
@@ -150,17 +187,29 @@ Some of these may not be practical or recommend for use case but are defined her
 - `sqrt` - square root
 - `sub` - subtraction
 
-### Data Size Units
-| Abbreviation | Name     | SI (Decimal)            | Binary (IEC) Name  | Binary Value                |
-| ------------ | -------- | ----------------------- | ------------------ | --------------------------- |
-| **B**        | Byte     | 1 byte                  | –                  | 8 bits                      |
-| **KB**       | Kilobyte | 1,000 bytes             | **KiB** (Kibibyte) | 1,024 bytes                 |
-| **MB**       | Megabyte | 1,000,000 bytes         | **MiB** (Mebibyte) | 1,048,576 bytes (1024²)     |
-| **GB**       | Gigabyte | 1,000,000,000 bytes     | **GiB** (Gibibyte) | 1,073,741,824 bytes (1024³) |
-| **TB**       | Terabyte | 1,000,000,000,000 bytes | **TiB** (Tebibyte) | 1,099,511,627,776 bytes     |
-| **PB**       | Petabyte | 10¹⁵ bytes              | **PiB**            | 1024⁵ bytes                 |
+### Units of Measurement
 
-### Time Units
+#### Data Size
+
+- `b` - bit
+- `nib` - nibble
+- `B` - byte
+- `KB` - kilobyte
+- `MB` - megabyte
+- `GB` - gigabyte
+- `TB` - terabyte
+- `PB` - petabyte
+
+#### Data Speed
+
+- `bps` - bits per second
+- `Bps` - bytes per second
+- `KBps` - kilobytes per second
+- `MBps` - megabytes per second
+- `GBps` - gigabytes per second
+- `TBps` - terabytes per second
+
+#### Time
 
 - `ns` - nanoseconds
 - `ms` - milliseconds

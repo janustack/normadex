@@ -22,12 +22,10 @@ function Codex() {
 				<h1>Codex</h1>
 				<p></p>
 			</header>
-            
-			<a
-				href="https://raw.githubusercontent.com/janustack/std-covenant/main/CODEX.md"
-			>
+
+			<a href="https://raw.githubusercontent.com/janustack/std-covenant/main/CODEX.md">
 				Markdown
 			</a>
 		</>
-	)
+	);
 }

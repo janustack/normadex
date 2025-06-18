@@ -23,5 +23,5 @@ function Adopters() {
 				<p>Communities that have adopted the Normadex Covenant.</p>
 			</header>
 		</>
-	)
+	);
 }
