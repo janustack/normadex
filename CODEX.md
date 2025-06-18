@@ -4,11 +4,11 @@ A covenant of consistent coding practices, naming conventions, and abbreviations
 
 ## Table of Contents
 
-- [Guiding Principles](#guiding-principles)
 - [Abbreviations](#abbreviation)
   - [General](#general)
   - [Math](#math)
-- [Naming Conventions](#naming-conventions)
+  - [Time](#time)
+- [Conventions](#conventions)
 
 ## Abbreviations
 
@@ -88,6 +88,7 @@ Some of these may not be practical or recommend for use case but are defined her
 - `str` - string
 - `fib` - Fibonacci
 - `mem` - memory
+- `seg` - segmentation
 - `memo` - memoization
 - `seq` - sequence
 - `cpy` - copy
@@ -151,7 +152,24 @@ Some of these may not be practical or recommend for use case but are defined her
 - `sqrt` - square root
 - `sub` - subtraction
 
-## Naming Conventions
+### Data Size Units
+| Abbreviation | Name     | SI (Decimal)            | Binary (IEC) Name  | Binary Value                |
+| ------------ | -------- | ----------------------- | ------------------ | --------------------------- |
+| **B**        | Byte     | 1 byte                  | –                  | 8 bits                      |
+| **KB**       | Kilobyte | 1,000 bytes             | **KiB** (Kibibyte) | 1,024 bytes                 |
+| **MB**       | Megabyte | 1,000,000 bytes         | **MiB** (Mebibyte) | 1,048,576 bytes (1024²)     |
+| **GB**       | Gigabyte | 1,000,000,000 bytes     | **GiB** (Gibibyte) | 1,073,741,824 bytes (1024³) |
+| **TB**       | Terabyte | 1,000,000,000,000 bytes | **TiB** (Tebibyte) | 1,099,511,627,776 bytes     |
+| **PB**       | Petabyte | 10¹⁵ bytes              | **PiB**            | 1024⁵ bytes                 |
+
+### Time Units
+
+- `ns` - nanoseconds
+- `ms` - milliseconds
+- `ps` - picoseconds
+- `secs` - seconds
+
+## Conventions
 
 ### Markdown
 
@@ -177,34 +195,16 @@ In each package root directory:
   - `README.md`
   - `LICENSE`
 
+## Casing
 
-
-
-
-
-
-
-
-
-
-
-
-## kebab-case
+### kebab-case
 
 CLI commands
 
-## snake_case
+### snake_case
 
 Use `snake_case` for naming files and folders consistently across your project unless otherwise dictated by the language’s or framework’s convention.
 
 ## TL;DR
 
-
 ## Attribution
-
-This Codex of Code Standards is adapted from the []
-
-[homepage]:
-
-
-

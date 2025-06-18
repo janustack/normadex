@@ -1,0 +1,31 @@
+{
+	"name": "website",
+	"description": "Website for STD Covenant",
+	"author": "Andrew Christian Young (https://andrewcwhy.me/)",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"preview": "vite preview",
+		"check": "biome check --write .",
+		"format": "biome format --write .",
+		"lint": "biome lint --write ."
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.10",
+		"@tanstack/solid-router": "^1.121.21",
+		"solid-icons": "^1.1.0",
+		"solid-js": "^1.9.7",
+		"tailwindcss": "^4.1.10"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.0",
+		"@janfig/tsconfig": "^0.1.1",
+		"@tanstack/router-plugin": "^1.121.22",
+		"@types/bun": "^1.2.16",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5",
+		"vite-plugin-solid": "^2.11.6"
+	}
+}
