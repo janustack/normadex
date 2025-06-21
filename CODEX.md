@@ -53,13 +53,14 @@ Some of these may not be practical or recommend for use case but are defined her
 - `exec` - execute
 - `nav` - navigate
 - `exe` - executable
+- `arith` - arithmetic
 - `lang` - language
 - `eval` - evaluate
 - `acy` - Andrew Christian Young
 - `char` - character
 - `attr` - attribute
-- `comp` - component or compile
-- `cmp` - comparison
+- `cmp` - compare
+- `concat` - concatenate
 - `src` - source
 - `dist` - distribution or distance
 - `fn` or `func` - function
@@ -112,6 +113,8 @@ Some of these may not be practical or recommend for use case but are defined her
 - `alg` - algorithm
 - `dbl` - double
 - `eg` - example
+- `cmd` - command
+- `instr` - instruction
 - `def` - definition
 - `trav` - traverse or traversal
 - `props` - properties

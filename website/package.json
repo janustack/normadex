@@ -1,6 +1,6 @@
 {
 	"name": "website",
-	"description": "Website for Normadex",
+	"description": "Website for Normadex.",
 	"author": "Andrew Christian Young (https://andrewcwhy.me/)",
 	"private": true,
 	"type": "module",
