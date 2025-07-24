@@ -1,0 +1,14 @@
+{
+	"name": "@signadex/assets",
+	"description": "",
+	"author": "Andrew Christian Young (https://andrewcwhy.me/)",
+	"keywords": [
+		"cli"
+	],
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"version": "0.1.0"
+}

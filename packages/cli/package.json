@@ -1,0 +1,20 @@
+{
+	"name": "@signadex/cli",
+	"description": "",
+	"author": "Andrew Christian Young (https://andrewcwhy.me/)",
+	"bin": {
+		"signadex": "bin/signadex.js"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"cli"
+	],
+    "license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"version": "0.1.0"
+}

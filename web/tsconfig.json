@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      ":/*": ["./src/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "extends": "@janfig/tsconfig/solid"
+}
