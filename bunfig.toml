@@ -1,0 +1,2 @@
+[install.scopes]
+"@signadex" = { token = "$SIGNADEX_NPM_TOKEN", url = "https://registry.npmjs.org/" }
